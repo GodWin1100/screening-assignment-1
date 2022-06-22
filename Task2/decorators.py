@@ -54,11 +54,11 @@ def decorator(func):
         func(*args, **kwargs)
         print("\t\t>> Execution completed within wrapper")
 
-    print("\t> execution complete of decorator. But not of wrapper function")
+    print("\t> Execution of Decorator done at the moment when it's call. But not of wrapper")
     return wrapper
 
 
-@decorator
+@decorator  # will execute lines in decorator
 def child_fun(one, two, three, four):
     print(f"\t\t\t>>> argument: {one, two, three,four}")
     print("\t\t\t>>> In child function")
